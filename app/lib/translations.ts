@@ -138,7 +138,7 @@ export const translations = {
             button: "Say Hello",
         },
         footer: {
-            rights: "© 2025 Liu Chung Shiang's Portfolio. All rights reserved.",
+            rights: "Liu Chung Shiang's Portfolio. All rights reserved.",
         },
     },
     ja: {
