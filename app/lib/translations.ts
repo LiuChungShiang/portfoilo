@@ -11,8 +11,8 @@ export const translations = {
             contact: "Contact",
         },
         hero: {
-            title: "Data Scientist",
-            subtitle: "& Developer",
+            title: "劉仲翔(Liu Chung Shiang)",
+            subtitle: "",
             description: "Transforming complex data into actionable insights and building intelligent solutions.",
             viewProjects: "View Projects",
             viewExperience: "View Experience",
@@ -151,8 +151,8 @@ export const translations = {
             contact: "お問い合わせ",
         },
         hero: {
-            title: "データサイエンティスト",
-            subtitle: "＆ 開発者",
+            title: "劉仲翔(Liu Chung Shiang)",
+            subtitle: "",
             description: "複雑なデータを実用的な洞察に変え、インテリジェントなソリューションを構築します。",
             viewProjects: "プロジェクトを見る",
             viewExperience: "経歴を見る",
@@ -291,8 +291,8 @@ export const translations = {
             contact: "聯絡我",
         },
         hero: {
-            title: "資料科學家",
-            subtitle: "& 開發者",
+            title: "劉仲翔(Liu Chung Shiang)",
+            subtitle: "",
             description: "將複雜的數據轉化為可行的洞察，並構建智能解決方案。",
             viewProjects: "查看專案",
             viewExperience: "查看經歷",
