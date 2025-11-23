@@ -138,7 +138,7 @@ export const translations = {
             button: "Say Hello",
         },
         footer: {
-            rights: "Data Scientist Portfolio. All rights reserved.",
+            rights: "© 2025 Liu Chung Shiang's Portfolio. All rights reserved.",
         },
     },
     ja: {
@@ -278,7 +278,7 @@ export const translations = {
             button: "メールを送る",
         },
         footer: {
-            rights: "Data Scientist Portfolio. All rights reserved.",
+            rights: "© 2025 Liu Chung Shiang's Portfolio. All rights reserved.",
         },
     },
     "zh-tw": {
@@ -418,7 +418,7 @@ export const translations = {
             button: "發送郵件",
         },
         footer: {
-            rights: "Data Scientist Portfolio. All rights reserved.",
+            rights: "© 2025 Liu Chung Shiang's Portfolio. All rights reserved.",
         },
     },
 };

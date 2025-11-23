@@ -10,16 +10,26 @@ export function Hero() {
     const { t } = useLanguage();
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-            {/* Background Image */}
+        <section className="relative h-[85vh] flex items-center justify-center overflow-hidden pt-16">
+            {/* Background Video */}
             <div className="absolute inset-0 z-0">
-                <Image
-                    src="/background.jpg"
-                    alt="Background"
-                    fill
-                    className="object-cover opacity-50"
-                    priority
-                />
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full h-full object-cover opacity-50"
+                >
+                    <source src="/background-video.mp4" type="video/mp4" />
+                    {/* Fallback to image if video doesn't load */}
+                    <Image
+                        src="/background.jpg"
+                        alt="Background"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </video>
                 <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/50 to-background" />
             </div>
 
@@ -67,20 +77,8 @@ export function Hero() {
                     className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap"
                 >
                     <Link
-                        href="#projects"
-                        className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-                    >
-                        {t.hero.viewProjects}
-                    </Link>
-                    <Link
-                        href="#experience"
-                        className="bg-background/80 backdrop-blur-sm text-foreground px-8 py-4 rounded-full font-bold text-lg hover:bg-background transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 border border-border"
-                    >
-                        {t.hero.viewExperience}
-                    </Link>
-                    <Link
                         href="#contact"
-                        className="bg-white text-foreground px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 border-2 border-transparent hover:border-primary/10"
+                        className="bg-primary text-primary-foreground px-10 py-5 rounded-full font-bold text-xl hover:bg-primary/90 transition-all shadow-2xl hover:shadow-primary/50 hover:-translate-y-1 border-2 border-primary-foreground/20 animate-pulse hover:animate-none"
                     >
                         {t.hero.contactMe}
                     </Link>
