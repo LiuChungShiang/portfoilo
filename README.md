@@ -1,3 +1,3 @@
 # Gemini 3 Proを用いて開発したポートフォリオサイト
 ## AI駆動開発
-データサイエンス
+URL：https://portfoilo-mu-roan.vercel.app/
