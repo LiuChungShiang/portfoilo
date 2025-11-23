@@ -10,7 +10,8 @@ export function Hero() {
     const { t } = useLanguage();
 
     return (
-        <section className="h-[calc(100vh-4rem)] flex flex-col items-center justify-center relative overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+            {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/background.jpg"
