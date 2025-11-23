@@ -20,7 +20,7 @@ export const translations = {
         },
         about: {
             title: "About Me",
-            description: "I am a passionate Data Scientist with a strong background in building predictive models and data-driven applications. I bridge the gap between complex algorithms and business value, always striving to create intuitive and impactful solutions.",
+            description: "I am an international student from Taiwan, currently studying data science at graduate school with a background in foreign languages. As someone who has experienced both humanities and sciences, I bridge these disciplines. I am passionate about understanding customer needs and extracting insights using data science techniques. My goal is to become a specialist in data utilization.",
             skills: {
                 dataAnalysis: "Data Analysis & Visualization",
                 dataAnalysisDesc: "Python, R, SQL, Streamlit, Tableau",
@@ -160,7 +160,7 @@ export const translations = {
         },
         about: {
             title: "私について",
-            description: "予測モデルの構築やデータ駆動型アプリケーションの開発に強みを持つデータサイエンティストです。複雑なアルゴリズムとビジネス価値の架け橋となり、直感的でインパクトのあるソリューションを提供することに情熱を注いでいます。",
+            description: "外国語学部卒で、現在大学院でデータサイエンスを勉強している台湾出身の留学生です。文系と理系の分野を両方経験してきた文理融合型の人間です。顧客のニーズを理解し、データサイエンス技術を駆使してインサイトを抽出することに興味を持っています。データ活用のスペシャリストになることを目標にして頑張っています。",
             skills: {
                 dataAnalysis: "データ分析と可視化",
                 dataAnalysisDesc: "Python, R, SQL, Streamlit, Tableau",
@@ -300,7 +300,7 @@ export const translations = {
         },
         about: {
             title: "關於我",
-            description: "我是一位熱衷於構建預測模型和數據驅動應用程式的資料科學家。我致力於在複雜演算法與商業價值之間架起橋樑，始終努力創造直觀且具影響力的解決方案。",
+            description: "我是來自台灣的留學生，外國語學院畢業，目前在研究所攻讀資料科學。作為一個同時經歷過文科與理科領域的文理融合型人才，我熱衷於理解客戶需求，並運用資料科學技術提取洞察。我的目標是成為數據應用領域的專家。",
             skills: {
                 dataAnalysis: "數據分析與視覺化",
                 dataAnalysisDesc: "Python, R, SQL, Streamlit, Tableau",
