@@ -274,139 +274,151 @@ export const translations = {
                 sending: "送信中...",
                 success: "メッセージが送信されました！",
                 error: "エラーが発生しました。もう一度お試しください。",
-                research: "研究成果",
-                projects: "專案",
-                contact: "聯絡我",
             },
-            hero: {
-                title: "劉仲翔(Liu Chung Shiang)",
-                subtitle: "",
-                description: "將複雜的數據轉化為可行的洞察，並構建智能解決方案。",
-                viewProjects: "查看專案",
-                viewExperience: "查看經歷",
-                contactMe: "聯絡我",
+            button: "メールを送る",
+        },
+        footer: {
+            rights: "Liu Chung Shiang's Portfolio. All rights reserved.",
+        },
+    },
+    "zh-tw": {
+        nav: {
+            home: "首頁",
+            about: "關於我",
+            experience: "經歷",
+            research: "研究成果",
+            projects: "專案",
+            contact: "聯絡我",
+        },
+        hero: {
+            title: "劉仲翔(Liu Chung Shiang)",
+            subtitle: "",
+            description: "將複雜的數據轉化為可行的洞察，並構建智能解決方案。",
+            viewProjects: "查看專案",
+            viewExperience: "查看經歷",
+            contactMe: "聯絡我",
+        },
+        about: {
+            title: "關於我",
+            description: "我是來自台灣的留學生，外國語學院畢業，目前在研究所攻讀資料科學。作為一個同時經歷過文科與理科領域的文理融合型人才，我熱衷於理解客戶需求，並運用資料科學技術提取洞察。我的目標是成為數據應用領域的專家。",
+            skills: {
+                dataAnalysis: "數據分析與視覺化",
+                dataAnalysisDesc: "Python, R, SQL, Streamlit, Tableau",
+                ml: "機器學習",
+                mlDesc: "Scikit-learn, PyTorch, etc",
+                causalInference: "因果推論",
+                causalInferenceDesc: "DID, PSM, TWFE, etc",
+                aiDriven: "AI驅動開發",
+                aiDrivenDesc: "Antigravity, Codex, etc",
             },
-            about: {
-                title: "關於我",
-                description: "我是來自台灣的留學生，外國語學院畢業，目前在研究所攻讀資料科學。作為一個同時經歷過文科與理科領域的文理融合型人才，我熱衷於理解客戶需求，並運用資料科學技術提取洞察。我的目標是成為數據應用領域的專家。",
-                skills: {
-                    dataAnalysis: "數據分析與視覺化",
-                    dataAnalysisDesc: "Python, R, SQL, Streamlit, Tableau",
-                    ml: "機器學習",
-                    mlDesc: "Scikit-learn, PyTorch, etc",
-                    causalInference: "因果推論",
-                    causalInferenceDesc: "DID, PSM, TWFE, etc",
-                    aiDriven: "AI驅動開發",
-                    aiDrivenDesc: "Antigravity, Codex, etc",
-                },
-                certifications: {
-                    title: "證照與認證",
-                    categories: [
-                        {
-                            name: "數據與IT相關",
-                            items: [
-                                "統計檢定2級",
-                                "經濟學檢定EREミクロ・マクロA+",
-                            ],
-                        },
-                        {
-                            name: "語言",
-                            items: [
-                                "JLPT N1 180/180",
-                                "TOEFL iBT 88",
-                                "TOEIC L/R 850",
-                            ],
-                        },
-                    ],
-                },
-            },
-            experience: {
-                title: "經歷與學歷",
-                items: [
+            certifications: {
+                title: "證照與認證",
+                categories: [
                     {
-                        year: "2026年4月",
-                        title: "業務企劃職（資料科學與數位科技課程）",
-                        company: "日本航空股份有限公司",
-                        description: "入職",
-                        details: "將從事運用資料科學與數位科技的業務企劃工作。",
-                        image: "/images/jal.png",
+                        name: "數據與IT相關",
+                        items: [
+                            "統計檢定2級",
+                            "經濟學檢定EREミクロ・マクロA+",
+                        ],
                     },
                     {
-                        year: "2026年3月",
-                        title: "應用資料科學碩士學位",
-                        company: "上智大學研究所",
-                        description: "畢業",
-                        details: "專攻機器學習、數據分析與統計學。",
-                        image: "/images/sophia_bg.jpg",
-                    },
-                    {
-                        year: "2019年6月",
-                        title: "外國語文學院日本語文學系",
-                        company: "台灣輔仁大學",
-                        description: "畢業",
-                        details: "主修日本語言與文化。",
-                        image: "/images/fujen_bg_new.jpg",
-                    },
-                    {
-                        year: "2018年3月",
-                        title: "日本語日本文化學類",
-                        company: "筑波大學",
-                        description: "交換留學結業",
-                        details: "完成為期一年的交換留學計畫。",
-                        image: "/images/tsukuba_bg.jpg",
+                        name: "語言",
+                        items: [
+                            "JLPT N1 180/180",
+                            "TOEFL iBT 88",
+                            "TOEIC L/R 850",
+                        ],
                     },
                 ],
-            },
-            projects: {
-                title: "主要專案",
-                description: "以下是我開發的部分工具與分析案例，用於解決實際問題。",
-                items: {
-                    tableauDashboard: {
-                        title: "Tableau儀表板",
-                        description: "用於商業智慧與分析的互動式數據視覺化儀表板。",
-                    },
-                    recommendation: {
-                        title: "排名與BERT推薦系統",
-                        description: "運用排名演算法與BERT的個人化推薦系統。",
-                    },
-                    stpPersona: {
-                        title: "基於數據分析的STP與人物誌建立",
-                        description: "市場區隔、目標定位、定位分析與人物誌開發。",
-                    },
-                    dietRecord: {
-                        title: "飲食記錄分析",
-                        description: "追蹤營養攝取量並視覺化趨勢的數據分析工具。",
-                    },
-                },
-            },
-            research: {
-                title: "研究成果",
-                description: "因果推論與實證分析相關的學術研究。",
-                items: [
-                    {
-                        title: "住宅補助對促進結婚的效果　運用差異中的差異設計進行婚姻支援的實證分析",
-                        description: "運用差異中的差異法驗證住宅補助對結婚率影響的因果推論研究。",
-                        tags: ["因果推論", "DID", "政策分析"],
-                        year: "",
-                    },
-                ],
-            },
-            contact: {
-                title: "聯絡我",
-                description: "我隨時歡迎討論新專案、創意想法或合作機會。",
-                form: {
-                    name: "姓名",
-                    email: "電子郵件",
-                    message: "訊息",
-                    send: "發送訊息",
-                    sending: "發送中...",
-                    success: "訊息已成功發送！",
-                    error: "發生錯誤，請重試。",
-                },
-                button: "發送郵件",
-            },
-            footer: {
-                rights: "Liu Chung Shiang's Portfolio. All rights reserved.",
             },
         },
-    };
+        experience: {
+            title: "經歷與學歷",
+            items: [
+                {
+                    year: "2026年4月",
+                    title: "業務企劃職（資料科學與數位科技課程）",
+                    company: "日本航空股份有限公司",
+                    description: "入職",
+                    details: "將從事運用資料科學與數位科技的業務企劃工作。",
+                    image: "/images/jal.png",
+                },
+                {
+                    year: "2026年3月",
+                    title: "應用資料科學碩士學位",
+                    company: "上智大學研究所",
+                    description: "畢業",
+                    details: "專攻機器學習、數據分析與統計學。",
+                    image: "/images/sophia_bg.jpg",
+                },
+                {
+                    year: "2019年6月",
+                    title: "外國語文學院日本語文學系",
+                    company: "台灣輔仁大學",
+                    description: "畢業",
+                    details: "主修日本語言與文化。",
+                    image: "/images/fujen_bg_new.jpg",
+                },
+                {
+                    year: "2018年3月",
+                    title: "日本語日本文化學類",
+                    company: "筑波大學",
+                    description: "交換留學結業",
+                    details: "完成為期一年的交換留學計畫。",
+                    image: "/images/tsukuba_bg.jpg",
+                },
+            ],
+        },
+        projects: {
+            title: "主要專案",
+            description: "以下是我開發的部分工具與分析案例，用於解決實際問題。",
+            items: {
+                tableauDashboard: {
+                    title: "Tableau儀表板",
+                    description: "用於商業智慧與分析的互動式數據視覺化儀表板。",
+                },
+                recommendation: {
+                    title: "排名與BERT推薦系統",
+                    description: "運用排名演算法與BERT的個人化推薦系統。",
+                },
+                stpPersona: {
+                    title: "基於數據分析的STP與人物誌建立",
+                    description: "市場區隔、目標定位、定位分析與人物誌開發。",
+                },
+                dietRecord: {
+                    title: "飲食記錄分析",
+                    description: "追蹤營養攝取量並視覺化趨勢的數據分析工具。",
+                },
+            },
+        },
+        research: {
+            title: "研究成果",
+            description: "因果推論與實證分析相關的學術研究。",
+            items: [
+                {
+                    title: "住宅補助對促進結婚的效果　運用差異中的差異設計進行婚姻支援的實證分析",
+                    description: "運用差異中的差異法驗證住宅補助對結婚率影響的因果推論研究。",
+                    tags: ["因果推論", "DID", "政策分析"],
+                    year: "",
+                },
+            ],
+        },
+        contact: {
+            title: "聯絡我",
+            description: "我隨時歡迎討論新專案、創意想法或合作機會。",
+            form: {
+                name: "姓名",
+                email: "電子郵件",
+                message: "訊息",
+                send: "發送訊息",
+                sending: "發送中...",
+                success: "訊息已成功發送！",
+                error: "發生錯誤，請重試。",
+            },
+            button: "發送郵件",
+        },
+        footer: {
+            rights: "Liu Chung Shiang's Portfolio. All rights reserved.",
+        },
+    },
+};
