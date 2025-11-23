@@ -10,7 +10,7 @@ export function Hero() {
     const { t } = useLanguage();
 
     return (
-        <section className="relative h-[85vh] flex items-center justify-center overflow-hidden pt-16">
+        <section className="relative h-[88vh] flex items-center justify-center overflow-hidden pt-16">
             {/* Background Video */}
             <div className="absolute inset-0 z-0">
                 <video
