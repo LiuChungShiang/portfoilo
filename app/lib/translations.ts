@@ -29,7 +29,7 @@ export const translations = {
                 causalInference: "Causal Inference",
                 causalInferenceDesc: "DID, PSM, TWFE, etc",
                 aiDriven: "AI-Driven Development",
-                aiDrivenDesc: "Antigravity, Codex, etc",
+                aiDrivenDesc: "Codex, Claude, Gemini, etc",
             },
             certifications: {
                 title: "Certifications",
@@ -169,7 +169,7 @@ export const translations = {
                 causalInference: "因果推論",
                 causalInferenceDesc: "DID, PSM, TWFE, etc",
                 aiDriven: "AI駆動開発",
-                aiDrivenDesc: "Antigravity, Codex, etc",
+                aiDrivenDesc: "Codex, Claude, Gemini, etc",
             },
             certifications: {
                 title: "資格・認定",
@@ -309,7 +309,7 @@ export const translations = {
                 causalInference: "因果推論",
                 causalInferenceDesc: "DID, PSM, TWFE, etc",
                 aiDriven: "AI驅動開發",
-                aiDrivenDesc: "Antigravity, Codex, etc",
+                aiDrivenDesc: "Codex, Claude, Gemini, etc",
             },
             certifications: {
                 title: "證照與認證",
