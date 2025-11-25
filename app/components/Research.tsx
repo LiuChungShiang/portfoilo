@@ -3,18 +3,19 @@
 import { motion } from "framer-motion";
 import { BookOpen, ExternalLink } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { entranceAnimation } from "../lib/utils";
 
 export function Research() {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     return (
         <section id="research" className="py-20 bg-secondary/20">
             <div className="container px-4 mx-auto">
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
+                    key={language + "-research-header"}
+                    initial={entranceAnimation.initial}
+                    animate={entranceAnimation.animate}
+                    transition={entranceAnimation.transition}
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.research.title}</h2>
@@ -27,11 +28,10 @@ export function Research() {
                     {/* @ts-ignore */}
                     {t.research.items.map((item, index) => (
                         <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            key={`${language}-research-${index}`}
+                            initial={entranceAnimation.initial}
+                            animate={entranceAnimation.animate}
+                            transition={{ ...entranceAnimation.transition, delay: index * 0.1 }}
                             className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300"
                         >
                             <div className="flex items-start gap-4">
