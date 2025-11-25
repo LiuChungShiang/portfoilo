@@ -5,6 +5,7 @@ import { ExternalLink, Github, Image as ImageIcon, Video, Activity, Calculator, 
 import Link from "next/link";
 
 import { useLanguage } from "../context/LanguageContext";
+import { entranceAnimation } from "../lib/utils";
 
 export function Projects() {
     const { t, language } = useLanguage();
@@ -45,9 +46,9 @@ export function Projects() {
             <div className="container px-4 mx-auto">
                 <motion.div
                     key={language + "-projects-header"}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
+                    initial={entranceAnimation.initial}
+                    animate={entranceAnimation.animate}
+                    transition={entranceAnimation.transition}
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.projects.title}</h2>
@@ -60,9 +61,9 @@ export function Projects() {
                     {projects.map((project, index) => (
                         <motion.div
                             key={`${language}-${project.title}-${index}`}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            initial={entranceAnimation.initial}
+                            animate={entranceAnimation.animate}
+                            transition={{ ...entranceAnimation.transition, delay: index * 0.1 }}
                             className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300"
                         >
                             <div className="p-8">

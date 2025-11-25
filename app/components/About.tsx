@@ -5,6 +5,7 @@ import { Code, Database, LineChart, Brain, Linkedin, Github, BookOpen } from "lu
 import Image from "next/image";
 
 import { useLanguage } from "../context/LanguageContext";
+import { entranceAnimation } from "../lib/utils";
 
 export function About() {
     const { t, language } = useLanguage();
@@ -38,9 +39,9 @@ export function About() {
                 <div className="flex flex-col md:flex-row items-center gap-12 mb-16">
                     <motion.div
                         key={language + "-about-header"}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
+                        initial={entranceAnimation.initial}
+                        animate={entranceAnimation.animate}
+                        transition={entranceAnimation.transition}
                         className="flex-1 text-center md:text-left"
                     >
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">{t.about.title}</h2>
@@ -69,9 +70,9 @@ export function About() {
 
                     <motion.div
                         key={language + "-about-image"}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
+                        initial={entranceAnimation.initial}
+                        animate={entranceAnimation.animate}
+                        transition={entranceAnimation.transition}
                         className="flex-shrink-0"
                     >
                         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-background">
@@ -89,9 +90,9 @@ export function About() {
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={`${language}-${skill.title}-${index}`}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                initial={entranceAnimation.initial}
+                                animate={entranceAnimation.animate}
+                                transition={{ ...entranceAnimation.transition, delay: index * 0.1 }}
                                 className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-colors"
                             >
                             <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
@@ -105,9 +106,9 @@ export function About() {
 
                 <motion.div
                     key={language + "-about-certs"}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
+                    initial={entranceAnimation.initial}
+                    animate={entranceAnimation.animate}
+                    transition={entranceAnimation.transition}
                     className="bg-card p-8 rounded-2xl border border-border"
                 >
                     <h3 className="text-2xl font-bold mb-6 text-center">{t.about.certifications.title}</h3>
