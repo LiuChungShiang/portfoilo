@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useLanguage } from "../context/LanguageContext";
 
 export function About() {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     const skills = [
         {
@@ -37,9 +37,9 @@ export function About() {
             <div className="container px-4 mx-auto">
                 <div className="flex flex-col md:flex-row items-center gap-12 mb-16">
                     <motion.div
-                        initial={false}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
+                        key={language + "-about-header"}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                         className="flex-1 text-center md:text-left"
                     >
@@ -68,9 +68,9 @@ export function About() {
                     </motion.div>
 
                     <motion.div
-                        initial={false}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
+                        key={language + "-about-image"}
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                         className="flex-shrink-0"
                     >
@@ -87,14 +87,13 @@ export function About() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                         {skills.map((skill, index) => (
-                        <motion.div
-                            key={skill.title}
-                            initial={false}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-colors"
-                        >
+                            <motion.div
+                                key={`${language}-${skill.title}-${index}`}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                className="bg-card p-6 rounded-xl border border-border hover:border-primary/50 transition-colors"
+                            >
                             <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-4">
                                 {skill.icon}
                             </div>
@@ -105,9 +104,9 @@ export function About() {
                 </div>
 
                 <motion.div
-                    initial={false}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    key={language + "-about-certs"}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className="bg-card p-8 rounded-2xl border border-border"
                 >

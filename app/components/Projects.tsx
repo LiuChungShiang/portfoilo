@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useLanguage } from "../context/LanguageContext";
 
 export function Projects() {
-    const { t } = useLanguage();
+    const { t, language } = useLanguage();
 
     const projects = [
         {
@@ -44,9 +44,9 @@ export function Projects() {
         <section id="projects" className="py-20">
             <div className="container px-4 mx-auto">
                 <motion.div
-                    initial={false}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
+                    key={language + "-projects-header"}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     className="text-center mb-16"
                 >
@@ -59,10 +59,9 @@ export function Projects() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
                         <motion.div
-                            key={project.title}
-                            initial={false}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
+                            key={`${language}-${project.title}-${index}`}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                             className="group bg-card border border-border rounded-xl overflow-hidden hover:border-primary/50 transition-all duration-300"
                         >
