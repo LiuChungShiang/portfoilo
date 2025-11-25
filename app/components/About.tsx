@@ -37,7 +37,7 @@ export function About() {
             <div className="container px-4 mx-auto">
                 <div className="flex flex-col md:flex-row items-center gap-12 mb-16">
                     <motion.div
-                        initial={{ opacity: 0, x: -20 }}
+                        initial={false}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
@@ -68,7 +68,7 @@ export function About() {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, x: 20 }}
+                        initial={false}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
@@ -86,10 +86,10 @@ export function About() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                    {skills.map((skill, index) => (
+                        {skills.map((skill, index) => (
                         <motion.div
                             key={skill.title}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={false}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -105,7 +105,7 @@ export function About() {
                 </div>
 
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={false}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
